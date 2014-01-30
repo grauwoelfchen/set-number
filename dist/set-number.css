@@ -1,0 +1,8 @@
+.set-number textarea,.numbers .line-no{font-family:monospace !important;line-height:normal !important}
+.set-number{overflow:auto !important;margin:30px 0 0 9px;width:100%;}
+.set-number .lines{margin:0 3px 0 0;padding:0 2px 0 0;min-width:50px;float:left}
+.set-number .numbers{border-right:1px solid #e6ebe6;padding:0;margin:0;}
+.set-number .numbers .line-no{padding:0 .5em 0 0;margin:0;color:#aaa;text-align:right;white-space:nowrap}
+textarea{overflow:auto;width:auto;outline:none;border:none;box-shadow:none;transition:none;}
+textarea:focus{background-color:#fcfcfc;box-shadow:none}
+.lines .numbers .active{background-color:#fffaff;color:#e0a3c2}
