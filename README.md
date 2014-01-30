@@ -42,7 +42,10 @@ see `src/set-number.css.styl` about css style.
 % npm install grunt
 
 # uglify
-% grunt uglify #=> dist/set-number.min.js will be created
+% grunt uglify #=> dist/set-number.min.js will be generated
+
+# stylus
+% grunt stylus #=> dist/set-number.css will be generated
 
 # test
 % grunt qunit # or see `test/set-number.html` via browser
@@ -50,7 +53,8 @@ see `src/set-number.css.styl` about css style.
 
 ## Histroy
 
-* 20140130 Version 0.0.1 Initial Release
+* 20140131 Add stylus compile task (for `dist/set-number.css`) and [sample.html](https://github.com/grauwoelfchen/set-number/blob/master/example/set-number.html)
+* 20140130 Initial Release (0.0.1)
 
 
 ## Lincense

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SetNumber Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/autosize.js/1.18.1/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/grauwoelfchen/set-number/master/dist/set-number.min.js"></script>
+    <style>
+      // see dist/set-number.css
+      .set-number textarea,.numbers .line-no{font-family:monospace !important;line-height:normal !important}
+      .set-number{overflow:auto !important;margin:30px 0 0 9px;width:100%;}
+      .set-number .lines{margin:0 3px 0 0;padding:0 2px 0 0;min-width:50px;float:left}
+      .set-number .numbers{border-right:1px solid #e6ebe6;padding:0;margin:0;}
+      .set-number .numbers .line-no{padding:0 .5em 0 0;margin:0;color:#aaa;text-align:right;white-space:nowrap}
+      textarea{overflow:auto;width:auto;outline:none;border:none;box-shadow:none;transition:none;}
+      textarea:focus{background-color:#fcfcfc;box-shadow:none}
+      .lines .numbers .active{background-color:#fffaff;color:#e0a3c2}
+    </style>
+    <script>
+      var ready = function() {
+        // set-number
+        $("#editor").setNumber({
+          activeLine: 9
+        });
+        // jquery-autosize (optional)
+        $("#editor").autosize({
+          callback: function(textarea) {
+            $(textarea).scroll();
+          }
+        });
+        $("#editor").focus();
+      };
+    $(document).ready(ready);
+    </script>
+  </head>
+  <body>
+    <h1>SetNumber Example</h1>
+    <div class="example">
+      <h2>Example</h2>
+      <textarea id="editor" style="height: 300px; width: 500px;"></textarea>
+    </div>
+    <div class="usage">
+      <h2>Usage</h2>
+      <div>
+        <p>Load jQuery and SetNumber (js, css)</p>
+        <pre>
+          ;; e.g. CDN
+          &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/autosize.js/1.18.1/jquery.autosize.min.js"&gt;&lt;/script&gt;
+
+          ;; SetNumber
+          &lt;script type="text/javascript" src="../path/to/set-number.min.js"&gt;&lt;/script&gt;
+          &lt;link rel="stylesheet" href="../path/to/set-number.css" media="screen" /&gt;
+        </pre>
+      </div>
+      <div>
+        <p>Put textarea</p>
+        <pre>
+          &lt;body&gt;
+            &lt;textarea id="editor"&gt;&lt;/textarea&gt;
+          &lt;/body&gt;
+        </pre>
+      </div>
+      <div>
+        <p>Apply setNumber</p>
+        <pre>
+          &lt;script&gt;
+            var ready = function() {
+              // set-number
+              $("#editor").setNumber({
+                activeLine: 9
+              });
+              // jquery-autosize (optional)
+              $("#editor").autosize({
+                callback: function(textarea) {
+                  $(textarea).scroll();
+                }
+              });
+            };
+            $(document).ready(ready);
+          &lt;/script&gt;
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
