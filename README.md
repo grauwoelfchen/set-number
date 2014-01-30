@@ -53,7 +53,7 @@ see `src/set-number.css.styl` about css style.
 
 ## Histroy
 
-* 20140131 Add stylus compile task (for `dist/set-number.css`) and [sample.html](https://github.com/grauwoelfchen/set-number/blob/master/example/set-number.html)
+* 20140131 Add stylus compile task (for `dist/set-number.css`) and [sample.html](https://github.com/grauwoelfchen/set-number/blob/master/example/index.html)
 * 20140130 Initial Release (0.0.1)
 
 
