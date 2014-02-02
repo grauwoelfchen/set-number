@@ -12,6 +12,7 @@
 
 * [jQuery](https://github.com/jquery/jquery)
 * [jQuery Autosize](https://github.com/jackmoore/autosize) (optional)
+* [SetCursorLine](https://github.com/grauwoelfchen/set-cursor-line) (optional)
 
 
 ## Usage
@@ -33,7 +34,7 @@ $("#id").autosize({
 });
 ```
 
-see `src/set-number.css.styl` about css style.
+see also [example/index.html](https://github.com/grauwoelfchen/set-number/blob/master/example/index.html)
 
 
 ## Development
