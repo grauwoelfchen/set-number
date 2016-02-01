@@ -1,5 +1,7 @@
 # SetNumber jQuery Plugin
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/b922b2ee-fca1-4981-9856-78493f02581c/680258/badge.svg)](https://semaphoreci.com/grauwoelfchen/set-number)
+
 `:set number` for textarea
 
 * Scroll Event support
